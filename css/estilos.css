@@ -1,10 +1,105 @@
+/* id       #
+class       .
+atributo    [] */
 
-h1{
+#mp1{
+    border-top: 3px solid tomato;
+    border-bottom: 5px solid tomato;
+}
+
+#mp1 main {
+    background-color: blueviolet;
+}
+
+#mp1 aside {
+    background-color: gold;
+}
+
+#mp1 > footer {
+    background-color: darkorange;
+}
+
+/* Poner borde al pie de los articulos de la minipage 1*/
+article > footer{
+    border:1px double gray;
+}
+
+/* Hermano general*/
+
+#mp1 h2~article{
+    box-shadow: 10px 10 px palevioletred;
+}
+
+/* Hermano adyacente*/
+#mp1 h2 + article, #mp1 nav, [href="#"]{
+    border-top: 5px double blue;
+}
+
+
+/* Sirve para un titulo redondo con puntitos */
+/* h1{
     border:10px dotted pink;
     border-radius: 50px;
     background-color: rgb(221, 205, 235);
     text-align: center;
     box-shadow: 5px 5px gray;
     font-size: 300px;
+} */ 
 
+/* Selector universal (Escribe una instrucción que cambie a todas las líneas*/
+/* *{
+    border: 1px dashed palevioletred;
+} */
+
+/* Selector por ID, se hace con un # */
+/* #link1{
+    font-size: 40px;
 }
+
+#link6{
+    background-color: darksalmon;
+} */
+
+/* Selectores de clase, se hace con punto y se ocupa una class o o clase */
+/* .rosa {
+    background-color: deeppink;
+    border: 5 px groove palevioletred;
+    border-radius: 5px;
+}
+
+.morado {
+    background-color: blueviolet;
+    border: 5px inset plum;
+    border-radius: 5px;
+} 
+
+/* Selectores de clase para un tag especifico */
+/* h1.morado {
+    font-size: 70px;
+} */
+/* Selectores por atributo, se usan corchetes, sin importar valores*/
+/* [href]{
+    border-bottom: 5px solid skyblue;
+}
+[lang]{
+    color: hotpink;
+} */
+ */
+
+/* [href="#"]{
+    background-color: lawngreen;
+}
+
+[href="you"]{
+    color: red;
+}
+
+[href $= "mx"]{
+    background-color: blue;
+}
+
+[href ^= "https"]
+{font-size: 25px;
+} */
+
+
